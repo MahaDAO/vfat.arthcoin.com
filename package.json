@@ -24,7 +24,7 @@
     "prepend-banner": "babel-node build-tools/prepend-banner.js",
     "rmprod": "rimraf filename-map.json && rimraf dist",
     "prettier": "prettier --write 'src/**/*.{js,css,scss,json,html}'",
-    "deploy": "echo 'vfat.arthcoin.com' > dist/CNAME &&gh-pages -d dist"
+    "deploy": "npm run build && echo 'vfat.arthcoin.com' > dist/CNAME && gh-pages -d dist"
   },
   "author": "Jongseung Lim",
   "license": "MIT",
